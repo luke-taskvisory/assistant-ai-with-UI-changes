@@ -1,0 +1,53 @@
+/* Sidebar */
+.sidebar-item {
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.sidebar-item:hover {
+  background-color: #575757;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* Sidebar tab icon */
+.sidebar-tab-icon {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar-tab-icon:hover {
+  background-color: #575757;
+  border-radius: 7px;
+}
+
+
+/* Scrollbar */
+/* For WebKit (Chrome, Safari, newer versions of Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #343a40; /* Match the scrollbar track to app background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #575757; /* Color of the scrollbar itself */
+  border-radius: 5px;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #575757 #343a40; /* thumb and track color */
+}
